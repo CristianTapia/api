@@ -1,6 +1,6 @@
 // app/api/products/route.ts
 import { NextResponse } from "next/server";
-import { supabase } from "../../lib/supabase";
+import { supabase } from "@/lib/supabase";
 
 // GET /api/products
 export async function GET() {
@@ -22,7 +22,3 @@ export async function POST(req: Request) {
   }
   return NextResponse.json(data, { status: 201 });
 }
-
-// DELETE /api/products
-
-// PUT /api/products
